@@ -1,0 +1,36 @@
+.outer {
+    height: 100vh;
+    background-image: linear-gradient(95.2deg, rgba(248, 229, 229, 1) 26.8%, rgba(224, 246, 255, 1) 64%);
+    /* background-image: image("assets/images/bg_login_regis.jpg"); */
+}
+
+mat-card {
+    margin: 2%;
+    text-align: left;
+    width: 50%;
+    border: 1px solid #ccc;
+}
+
+.mat-mdc-form-field {
+    width: 98%;
+    margin: 1%;
+}
+
+.mat-50 {
+    width: 48%;
+    margin: 1%;
+}
+
+.div-50 {
+    width: 48%;
+    margin: 1%;
+    display: inline;
+}
+
+button {
+    margin: 2px;
+}
+
+.mat-mdc-raised-button {
+    width: 100%;
+}

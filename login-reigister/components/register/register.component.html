@@ -1,0 +1,89 @@
+<!-- <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Register</mat-card-title>
+      </mat-card-header>
+  
+      <form class="example-form">
+  
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Email">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <mat-label>Choose a role...</mat-label>
+            <mat-select>
+              <mat-option [value]="roles" *ngFor="let roles of Roles">{{roles}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+        </mat-card-content>
+  
+        <button mat-stroked-button color="accent" class="btn-block">Register</button>
+  
+      </form>
+    </mat-card>
+  </div> -->
+
+<div class="outer">
+  <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card>
+      <mat-card-header>
+        <h1>Đăng ký</h1>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field>
+          <mat-label>Tên tài khoản</mat-label>
+          <input formControlName="username" matInput>
+        </mat-form-field>
+        <mat-form-field class="mat-50">
+          <mat-label>Mật khẩu</mat-label>
+          <input type="password" formControlName="password" matInput>
+        </mat-form-field>
+        <mat-form-field class="mat-50">
+          <mat-label>Nhập lại mật khẩu</mat-label>
+          <input type="password" formControlName="confirmpassword" matInput>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Họ và tên</mat-label>
+          <input formControlName="name" matInput>
+        </mat-form-field>
+        <mat-form-field class="mat-50">
+          <mat-label>Email*</mat-label>
+          <input formControlName="email" matInput>
+        </mat-form-field>
+        <mat-form-field class="mat-50">
+          <mat-label>Số điện thoại</mat-label>
+          <input formControlName="phone" matInput>
+        </mat-form-field>
+        <div class="div-50">
+          <mat-radio-group formControlName="gender">
+            <mat-radio-button color="primary" value="male">Nam</mat-radio-button>
+            <mat-radio-button value="female">Nữ</mat-radio-button>
+            <mat-radio-button value="other">Khác</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="div-50">
+          <button type="submit" color="primary" mat-raised-button>Đăng ký</button>
+        </div>
+        <div class="div-50">
+          <a routerLink="/login" color="accent" mat-raised-button>Đăng nhập</a>
+        </div>
+      </mat-card-actions>
+
+    </mat-card>
+  </div>
+</div>
